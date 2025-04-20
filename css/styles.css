@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    position: relative;
+    background-color: #fefcf9;
+    color: #444;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: "Charm", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: "Charm", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-size: 1.2rem;
+    font-family: "Andika", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+a:visited {
+    color: #444;
+}
+
+.nombre-nino {
+    font-size: 3rem;
+    font-family: "Rouge Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.section {
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    scroll-snap-align: start;
+    position: relative;
+    z-index: 1;
+}
+
+canvas#particles-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    width: 85%;
+    max-width: 1000px;
+    background: rgba(255,255,255,0.85);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    backdrop-filter: blur(6px);
+    z-index: 2;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .content {
+        width: 95%;
+    }
+}
+
+.foto-nino {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 4px solid #e5c07b;
+}
+
+@media (min-width: 740px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        font-size: 1.3rem;
+        margin: 5px;
+    }
+}
+
+h1, h2 {
+    color: #c59d5f;
+    margin-bottom: 1rem;
+}
+
+button {
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background-color: #c59d5f;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #b28a4e;
+}
+
+iframe {
+    border-radius: 12px;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #c59d5f;
+    background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 1.5rem;
+    }
+
+    .foto-nino {
+        width: 200px;
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        font-family: "Charm", cursive;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        font-family: "Charm", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    p {
+        font-size: .9rem;
+        font-family: "Andika", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    h3 {
+        font-family: "Andika", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 0.6rem 1.2rem;
+    }
+
+    .nombre-nino {
+        font-size: 2.6rem;
+        font-family: "Rouge Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+.margin-top {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.barra {
+    width: 50%;
+    border: none;
+}
+
+.fotos-papas {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid #e5c07b;
+    margin-top: 1rem;
+}
+
+.grid-padrinos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+}
